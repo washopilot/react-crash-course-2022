@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-const Person = () => {
+const Person = (props: any) => {
   return (
     <>
-      <h1>Name: Jhon</h1>
-      <h2>Last Name: Doe</h2>
-      <h3>Age: 30</h3>
+      <h1>Name: {props.name}</h1>
+      <h2>Last Name: {props.lastName}</h2>
+      <h3>Age: {props.age}</h3>
     </>
   );
 };
@@ -16,10 +16,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Person />
-      <Person />
-      <Person />
-      <Person />
+      <Person name={'Jhon'} lastName={'Doe'} age={25} />
+      <Person name={'Jane'} age={2 + 2} />
+      <Person name={'Mary'} lastName={'Poppins'} />
     </div>
   );
 };

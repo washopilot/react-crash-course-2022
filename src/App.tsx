@@ -16,9 +16,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Person name={'Jhon'} lastName={'Doe'} age={25} />
-      <Person name={'Jane'} age={2 + 2} />
-      <Person name={'Mary'} lastName={'Poppins'} />
+      <Person name="Jhon" lastName="Doe" age={25} />
+      <Person name="Jane" age={2 + 2} />
+      <Person name="Mary" lastName="Poppins" />
     </div>
   );
 };

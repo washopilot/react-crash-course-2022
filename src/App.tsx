@@ -1,22 +1,25 @@
 import React from 'react';
 import './App.css';
 
+const Person = () => {
+  return (
+    <>
+      <h1>Name: Jhon</h1>
+      <h2>Last Name: Doe</h2>
+      <h3>Age: 30</h3>
+    </>
+  );
+};
+
 const App = () => {
-  const name = 'Jhon';
+  const isUserLoggedIn = true;
 
   return (
     <div className="App">
-      <h1>Hello {2 + 2}! </h1>
-      {name ? (
-        <>
-          <h1>{name}</h1>
-        </>
-      ) : (
-        <>
-          <h1>test</h1>
-          <h2>There is no name</h2>
-        </>
-      )}
+      <Person />
+      <Person />
+      <Person />
+      <Person />
     </div>
   );
 };

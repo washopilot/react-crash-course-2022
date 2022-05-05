@@ -2,9 +2,12 @@ import React from 'react';
 import './App.css';
 
 const App = () => {
+  const name = 'Jhon';
+  const isNameShowing = true;
+
   return (
     <div>
-      <h1>Heello, React!!!</h1>
+      <h1>Hello, {isNameShowing ? name : 'someone else'}</h1>
     </div>
   );
 };

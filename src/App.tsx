@@ -15,8 +15,23 @@ class App extends Component<{}, Estado> {
   render() {
     return (
       <div className="App">
-        <button onClick={() => console.log('click')}>-</button>
+        <button
+          onClick={() => {
+            this.setState((state, props) => ({
+              contador: state.contador - 1,
+            }));
+          }}>
+          -
+        </button>
         <h1>{this.state.contador}</h1>
+        <button
+          onClick={() => {
+            this.setState((state, props) => ({
+              contador: state.contador + 1,
+            }));
+          }}>
+          +
+        </button>
       </div>
     );
   }
